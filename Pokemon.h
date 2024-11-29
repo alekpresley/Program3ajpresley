@@ -38,7 +38,7 @@ class Pokemon{
         }
         //overload for the insert in the binary treee
         bool operator<(const Pokemon& pokemon){
-            if(getID() < pokemon.PokemonIndex){
+            if(getID() < pokemon.PokemonIndex){ //getting id to comapre
                 return true;
             }
             else{
@@ -47,7 +47,7 @@ class Pokemon{
         }
         //overload for the search
         bool operator==(const Pokemon& pokemon){
-            if(getID() == pokemon.PokemonIndex){
+            if(getID() == pokemon.PokemonIndex){ //getting id to compare
                 return true;
             }
             else{

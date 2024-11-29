@@ -27,7 +27,6 @@ class BinaryTree{
             The function inserts the node into the tree pointed to by  *the TreeNode pointer.
         */
         void insert(TreeNode *&nodePtr, TreeNode *&newNode){
-
             if(nodePtr == nullptr){
                 nodePtr = newNode;//insert the node.
             }                
@@ -43,7 +42,6 @@ class BinaryTree{
             Purpose:It deletes all nodes in the tree.               
         */
         void destroySubTree(TreeNode *nodePtr){
-
             if(nodePtr){
                 if(nodePtr->left){ //destroy left
                     destroySubTree(nodePtr->left);
@@ -105,7 +103,6 @@ class BinaryTree{
         */
         bool searchNode(T item){
             TreeNode *nodePtr = root; //root of the tree
-
             while(nodePtr != NULL){  //while the tree isn't null
                 if(nodePtr->value == item){
                     return true;
